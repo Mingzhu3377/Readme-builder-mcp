@@ -88,7 +88,7 @@ node dist/server.js
        "readme-builder": {
          "command": "node",
          "args": [
-           ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js""
+           "C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"
          ]
        }
      }
@@ -112,7 +112,7 @@ node dist/server.js
 **输入参数**
 
 ```json
-{ "dir": ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"" }
+{ "dir": "C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js" }
 ```
 
 * `dir`：目标仓库绝对路径（省略则取当前工作目录）。
@@ -151,7 +151,7 @@ node dist/server.js
 
 ```json
 {
-  "dir": ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"",
+  "dir": "C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js",
   "description": "示例 Node.js/Express 项目结构与实践。",
   "addBadges": true,
   "includeTOC": true,
@@ -184,7 +184,7 @@ node dist/server.js
 
 ```json
 {
-  "filePath": ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"",
+  "filePath": "C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js",
   "content": "# your-project\\n...完整 Markdown...",
   "confirm": true
 }
@@ -305,5 +305,6 @@ README.md
 ## 许可证
 
 该项目根据MIT 许可证
+
 
 
