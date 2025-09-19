@@ -88,7 +88,7 @@ node dist/server.js
        "readme-builder": {
          "command": "node",
          "args": [
-           "C:\\\\Users\\\\hp\\\\Desktop\\\\project\\\\readme-mcp\\\\dist\\\\server.js"
+           ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js""
          ]
        }
      }
@@ -112,7 +112,7 @@ node dist/server.js
 **输入参数**
 
 ```json
-{ "dir": "C:\\Users\\hp\\Desktop\\project\\your-project" }
+{ "dir": ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"" }
 ```
 
 * `dir`：目标仓库绝对路径（省略则取当前工作目录）。
@@ -151,7 +151,7 @@ node dist/server.js
 
 ```json
 {
-  "dir": "C:\\Users\\hp\\Desktop\\project\\your-project",
+  "dir": ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"",
   "description": "示例 Node.js/Express 项目结构与实践。",
   "addBadges": true,
   "includeTOC": true,
@@ -184,7 +184,7 @@ node dist/server.js
 
 ```json
 {
-  "filePath": "C:\\Users\\hp\\Desktop\\project\\your-project\\README.md",
+  "filePath": ""C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"",
   "content": "# your-project\\n...完整 Markdown...",
   "confirm": true
 }
@@ -203,7 +203,7 @@ node dist/server.js
 
    ```json
    { "tool": "detectRepo", "server": "readme-builder",
-     "args": { "dir": "C:\\Users\\hp\\Desktop\\project\\your-project" } }
+     "args": { "dir": "C:\\Users\\Desktop\\project\\your-project" } }
    ```
 
 2. **生成 README（Pro 版）**
@@ -211,7 +211,7 @@ node dist/server.js
    ```json
    { "tool": "generateReadmePro", "server": "readme-builder",
      "args": {
-       "dir": "C:\\Users\\hp\\Desktop\\project\\your-project",
+       "dir": "C:\\Users\\Desktop\\project\\your-project",
        "description": "你的项目一句话或一段简介。",
        "addBadges": true,
        "includeTOC": true,
@@ -225,7 +225,7 @@ node dist/server.js
    ```json
    { "tool": "writeFile", "server": "readme-builder",
      "args": {
-       "filePath": "C:\\Users\\hp\\Desktop\\project\\your-project\\README.md",
+       "filePath": "C:\\Users\\Desktop\\project\\your-project\\README.md",
        "content": "<把上一步返回的 Markdown 原文粘这里>",
        "confirm": true
      } }
@@ -243,13 +243,13 @@ node dist/server.js
 # 列出工具
 npx @modelcontextprotocol/client-cli tools list \
   --command node \
-  --args "C:\Users\hp\Desktop\project\readme-mcp\dist\server.js"
+  --args "C:\Users\Desktop\project\readme-mcp\dist\server.js"
 
 # 调用 generateReadmePro
 npx @modelcontextprotocol/client-cli tools call generateReadmePro \
-  --input "{\"dir\":\"C:\\\\Users\\\\hp\\\\Desktop\\\\project\\\\your-project\",\"description\":\"示例项目。\",\"addBadges\":true,\"includeTOC\":true,\"language\":\"zh\"}" \
+  --input "{\"dir\":\"C:\\\\Users\\\\Desktop\\\\project\\\\your-project\",\"description\":\"示例项目。\",\"addBadges\":true,\"includeTOC\":true,\"language\":\"zh\"}" \
   --command node \
-  --args "C:\Users\hp\Desktop\project\readme-mcp\dist\server.js"
+  --args "C:\Users\Desktop\project\readme-mcp\dist\server.js"
 ```
 
 ---
@@ -305,4 +305,5 @@ README.md
 ## 许可证
 
 该项目根据MIT 许可证
+
 
