@@ -304,5 +304,5 @@ README.md
 
 ## 许可证
 
-未指定。
-若你准备开源发布，建议添加 `LICENSE` 文件（常见：MIT），并在 `package.json` 中声明 `"license"` 字段；这样 `generateReadmePro` 也会展示许可证徽章。
+该项目根据MIT 许可证
+
