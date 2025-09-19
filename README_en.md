@@ -1,3 +1,5 @@
+# README.en.md（English, updated)
+
 # Readme-builder-mcp
 
 ![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen) ![TypeScript](https://img.shields.io/badge/TypeScript-ready-informational)
@@ -83,7 +85,7 @@ node dist/server.js
     "readme-builder": {
       "command": "node",
       "args": [
-        "C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"
+        "C\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js"
       ]
     }
   }
@@ -107,7 +109,7 @@ Reads `package.json` in a target directory and returns key fields (name, descrip
 **Input**
 
 ```json
-{ "dir":"C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js" }
+{ "dir":"C\\\\path\\\\to\\\\your-project" }
 ```
 
 * `dir`: absolute path to the target repo (defaults to current working directory if omitted).
@@ -146,7 +148,7 @@ Scans a directory and produces a **full GitHub-style README (Chinese)**.
 
 ```json
 {
-  "dir":"C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js",
+  "dir":"C\\\\path\\\\to\\\\your-project",
   "description": "Node.js/Express project structure & practices.",
   "addBadges": true,
   "includeTOC": true,
@@ -179,7 +181,7 @@ Writes a file (**requires** `confirm: true`).
 
 ```json
 {
-  "filePath": "C:\\Users\\Desktop\\project\\your-project\\README.md",
+  "filePath": "C\\\\path\\\\to\\\\your-project\\\\README.md",
   "content": "# your-project\n...full Markdown...",
   "confirm": true
 }
@@ -198,7 +200,7 @@ Writes a file (**requires** `confirm: true`).
 
 ```json
 { "tool": "detectRepo", "server": "readme-builder",
-  "args": { "dir":"C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js" } }
+  "args": { "dir":"C\\\\path\\\\to\\\\your-project" } }
 ```
 
 2. **Generate README (Pro)**
@@ -206,7 +208,7 @@ Writes a file (**requires** `confirm: true`).
 ```json
 { "tool": "generateReadmePro", "server": "readme-builder",
   "args": {
-    "dir":"C:\\\\path\\\\to\\\\readme-mcp\\\\dist\\\\server.js",
+    "dir":"C\\\\path\\\\to\\\\your-project",
     "description": "Brief intro to your project.",
     "addBadges": true,
     "includeTOC": true,
@@ -220,7 +222,7 @@ Writes a file (**requires** `confirm: true`).
 ```json
 { "tool": "writeFile", "server": "readme-builder",
   "args": {
-    "filePath": "C:\\Users\\Desktop\\project\\your-project\\README.md",
+    "filePath": "C\\\\path\\\\to\\\\your-project\\\\README.md",
     "content": "<paste the Markdown from step 2>",
     "confirm": true
   } }
@@ -238,13 +240,13 @@ Before wiring up Trae, you can test with the MCP CLI:
 # List tools
 npx @modelcontextprotocol/client-cli tools list \
   --command node \
-  --args "C:\Users\Desktop\project\readme-mcp\dist\server.js"
+  --args "C:\\path\\to\\readme-mcp\\dist\\server.js"
 
 # Call generateReadmePro
 npx @modelcontextprotocol/client-cli tools call generateReadmePro \
-  --input "{\"dir\":\"C:\\\\Users\\\\Desktop\\\\project\\\\your-project\",\"description\":\"Sample project.\",\"addBadges\":true,\"includeTOC\":true,\"language\":\"zh\"}" \
+  --input "{\"dir\":\"C\\\\\\\\path\\\\\\\\to\\\\\\\\your-project\",\"description\":\"Sample project.\",\"addBadges\":true,\"includeTOC\":true,\"language\":\"zh\"}" \
   --command node \
-  --args "C:\Users\Desktop\project\readme-mcp\dist\server.js"
+  --args "C:\\path\\to\\readme-mcp\\dist\\server.js"
 ```
 
 ---
